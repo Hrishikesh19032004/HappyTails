@@ -1,0 +1,19 @@
+.navbar{
+  height: 70px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: aliceblue;
+}
+.logo{
+  height: 40px;
+  width: 50px;
+  background-image: url("https://img.freepik.com/free-vector/pet-logo-design-paw-vector-animal-shop-business_53876-136741.jpg?size=626&ext=jpg&ga=GA1.1.177160706.1689165084&semt=sph");
+  background-size: cover;
+  border-radius: 40px;
+}
+body{
+  background-image: url("https://img.freepik.com/free-photo/beautiful-pet-portrait-dog_23-2149218450.jpg?size=626&ext=jpg&ga=GA1.1.177160706.1689165084&semt=sph");
+  background-size: cover;
+}
