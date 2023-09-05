@@ -1,19 +1,293 @@
-.navbar{
-  height: 70px;
-  background-color: white;
+/* body{
+  background-color: #023e8a;
+} */
+
+.dog{
+  z-index: -1000;
+  height: 800px;
+  width: 1265px;
+}
+
+.wave{
+  position: absolute;
+  top: 710px;
+  width: 100%;
+}
+
+.linearg{
+  height: 100px;
+  width: 100%;
+  margin-top: 10px;
+  background: linear-gradient(to bottom,white,#48cae4) ;
+}
+
+
+
+.btn1{
+  margin: 20px;
+  margin-top: 8px;
+  margin-bottom: 20px;
+  
+}
+.Message{
+   font-size: 70px;
+   font-weight: 700;
+   position: absolute;
+   right: 50px;
+   top: 200px;
+}
+
+.M2{
+  font-size: 20px;
+   font-weight: 600;
+   position: absolute;
+   right: 300px;
+   top: 420px;
+}
+
+.b1{
+  position: absolute;
+  right: 250px;
+  top: 500px;
+}
+
+.i1{
+  position: absolute;
+  top: 500px;
+  width: 100%;
+  object-fit: cover;
+}
+
+
+.text-on-underline{
+  text-decoration: none;
+  padding: 6px 15px;
+  border-radius: 20px;
+}
+
+.text-on-underline:hover{
+  background-color: rgb(169, 182, 195);
+  color: white;
+}
+
+
+/* 
+
+
+*/
+/* Dropdown styles */
+/* 
+
+
+*/
+.dropdown {
+  max-width: 13em;
+  position: absolute;
+  top: -1px;
+  width: 100%;
+}
+
+.dropdown-btn {
+  background: white;
+  font-size: 15px;
+  width: 100%;
+  border: none;
+  color: grey;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  color: aliceblue;
+  padding: 0.7em 0.5em;
+  border-radius: 20px;
+  cursor: pointer;
 }
-.logo{
-  height: 40px;
-  width: 50px;
-  background-image: url("https://img.freepik.com/free-vector/pet-logo-design-paw-vector-animal-shop-business_53876-136741.jpg?size=626&ext=jpg&ga=GA1.1.177160706.1689165084&semt=sph");
-  background-size: cover;
-  border-radius: 40px;
+
+.arrow {
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 6px solid black;
+  transition: transform ease-in-out 0.3s;
 }
-body{
-  background-image: url("https://img.freepik.com/free-photo/beautiful-pet-portrait-dog_23-2149218450.jpg?size=626&ext=jpg&ga=GA1.1.177160706.1689165084&semt=sph");
+
+.dropdown-content {
+  list-style: none;
+  position: absolute;
+  top: 3.2em;
+  width: 140px;
+  visibility: hidden;
+  overflow: hidden;
+}
+
+.dropdown-content li {
+  background: white;
+  border-radius: 0.5em;
+  position: relative;
+  left: 100%;
+  transition: 0.5s;
+  transition-delay: calc(60ms * var(--delay));
+}
+
+.dropdown-btn:focus + .dropdown-content li {
+  left: 0;
+}
+
+.dropdown-btn:focus + .dropdown-content {
+  visibility: visible;
+}
+
+.dropdown-btn:focus > .arrow {
+  transform: rotate(180deg);
+}
+
+.dropdown-content li:hover {
+  background: #1d1f24;
+}
+
+.dropdown-content li a {
+  display: block;
+  padding: 0.7em 0.5em;
+  color: black;
+  margin: 0.1em 0;
+  text-decoration: none;
+}
+
+/* base styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Segoe UI", sans-serif;
+  color: #333;
+/*   background: #cecece; */
+}
+
+
+/* text */
+
+.text{
+  position: absolute;  
+}
+
+sec h1{
+  color: white;
+  font-weight: 1000;
+  font-size: 70px;
+  font-family: helvetica,'Times New Roman', Times, serif;
+}
+
+/*Picture background*/
+
+
+
+.picimg1{
+  height: 284px;
+  width: 385px;
+  background-image: url("https://img.freepik.com/free-photo/elderly-person-with-pet-cat_23-2150285629.jpg?size=626&ext=jpg&ga=GA1.1.177160706.1689165084&semt=ais");
+  position: absolute;
+  right: 50px;
   background-size: cover;
+  border-radius: 10px;
+}
+
+.picimg2{
+  height: 120px;
+  width: 200px;
+  background-image: url("https://img.freepik.com/premium-photo/cute-little-kitten-hands-outdoors_392895-406000.jpg?size=626&ext=jpg&ga=GA1.1.177160706.1689165084&semt=ais");
+  position: absolute;
+  top: 30px;
+  right: 20px;
+  background-size: cover;
+  border-radius: 10px;
+  transform: rotate(20deg);
+}
+
+.picimg3{
+  height: 120px;
+  width: 200px;
+  background-image: url("https://img.freepik.com/free-photo/close-up-hand-trying-touch-cat_23-2148882576.jpg?size=626&ext=jpg&ga=GA1.1.177160706.1689165084&semt=ais");
+  position: absolute;
+  top: 290px;
+  right: 270px;
+  background-size: cover;
+  border-radius: 10px;
+  /* transform: rotate(-20deg); */
+}
+
+
+.text1{
+  
+  font-family: sans-serif;
+  font-weight: 500;
+}
+
+
+
+/* CSS */
+.catButton {
+  appearance: button;
+  background-color: #1899D6;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: din-round,sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: .8px;
+  line-height: 20px;
+  margin: 0;
+  outline: none;
+  overflow: visible;
+  padding: 13px 16px;
+  text-align: center;
+  text-transform: uppercase;
+  touch-action: manipulation;
+  transform: translateZ(0);
+  transition: filter .2s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.catButton:after {
+  background-clip: padding-box;
+  background-color: #1CB0F6;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  bottom: -4px;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.catButton:main,
+.catButton:focus {
+  user-select: auto;
+}
+
+.catButton:hover:not(:disabled) {
+  filter: brightness(1.1);
+  -webkit-filter: brightness(1.1);
+}
+
+.catButton:disabled {
+  cursor: auto;
+}
+
+.catButton{
+  position: absolute;
+  top: 550px;
+  right: 285px;
+  width: 120px;
+  text-align: center;
 }
